@@ -1,0 +1,165 @@
+/* Core Styles*/
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+* {
+	font-family: "Oxygen", sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+}
+
+.container > * {
+	grid-column: 2;
+}
+
+/* Inputs */
+input {
+	border: solid #CCCCCC 1px;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* Buttons */
+button {
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+.btn-green {
+	background-color: #2DC37F;
+}
+
+.btn-green:hover, .btn-green:focus {
+	background-color: #61C396;
+}
+
+.btn-red {
+	background-color: #D33333;
+}
+
+.btn-red:hover, .btn-red:focus {
+	background-color: #F35555;
+}
+
+.btn-blue {
+	background-color: #2D7FC3;
+	width: 100px;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+	background-color: #6196C3;
+}
+
+
+
+/* Sections */
+/* Header */
+.header {
+	background-color: #2DC37F;
+	color: #FFFFFF;
+	font-size: 48;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+
+/* Add Task */
+.task-options {
+	padding: 20px 0;
+}
+
+.task-options > * {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+}
+
+.task-options input {
+	width: 40%;
+	margin-right: 20px;
+}
+
+
+/* Task List */
+.task-list {
+	padding-bottom: 50px;
+}
+
+.task {
+	display: grid;
+	grid-template-columns: 1fr 10fr 1fr;
+	margin: 10px;
+	height: 50px;
+}
+
+
+/* Icons */
+.icon {
+	height: 100%;
+	width: 50px;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.not-done {
+	background-image: url("../imgs/not-done.png");
+}
+
+.not-done:hover {
+	opacity: 0.2;
+	background-image: url("../imgs/done.png");
+}
+
+.done {
+	background-image: url("../imgs/done.png");
+}
+
+.trash {
+	background-image: url("../imgs/trash.png");
+}
+
+
+/* Collapsible */
+.collapsible {
+  background-color: #EEEEEE;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 0px;
+}
+
+.collapsible:hover {
+  background-color: #CCCCCC;
+}
+
+.collapsible-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
