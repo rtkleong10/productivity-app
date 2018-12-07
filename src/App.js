@@ -86,12 +86,16 @@ class App extends Component {
 		if (this.state.uid === "") {
 
 			var provider = new firebase.auth.GoogleAuthProvider();
-			firebase.auth().signInWithPopup(provider).catch((e) => {});
+			firebase.auth().signInWithPopup(provider).catch((e) => {
+				console.error(e);
+			});
 
 		// Sign out
 		} else {
 
-			firebase.auth().signOut().catch((e) => {});
+			firebase.auth().signOut().catch((e) => {
+				console.error(e);
+			});
 		}
 	};
 
