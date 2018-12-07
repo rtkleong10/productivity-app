@@ -1,1 +1,2 @@
+# Productivity App
 This is a simple to-do list React app. It stores the tasks in Firebase & it uses Google accounts for signing in. In future, I hope to add more features to make this app more complex and hopefully more useful. Check it out at https://rtkleong10.github.io/productivity-app/.
