@@ -2,7 +2,6 @@
   "name": "productivity-app-firebase",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rtkleong10.github.io/productivity-app/",
   "dependencies": {
     "firebase": "^5.7.0",
     "gh-pages": "^2.0.1",
