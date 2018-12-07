@@ -12,12 +12,16 @@ import React, { Component } from 'react';
 // - tasks: dictionary of tasks (key {name: taskName, isDone: true/false})
 // - toggleDone: Callback function for checkbox button
 // - deleteTask: Callback function for trash button
+// - reorderTasks: Callback function for reordering by dragging
 
 // State
 // - showCompleted: Whether to show completed tasks
 
 class TaskList extends Component {
 
+	hoveredElement = null;
+	fromPos = null;
+	toPos = null;
 	collapsibleContentRef = React.createRef();
 
 	// Lifecycle Methods
@@ -52,7 +56,43 @@ class TaskList extends Component {
 
 			this.collapsibleContentRef.current.style.maxHeight = this.collapsibleContentRef.current.scrollHeight + "px";
 		}
-	}
+	};
+
+	// Reordering of lists
+	handleDragStart = (e) => {
+		
+		this.fromPos = e.target.getAttribute("position");
+		e.dataTransfer.effectAllowed = 'move'; // Change cursor
+	};
+
+	handleDragOver = (e) => {
+
+		e.dataTransfer.dropEffect = 'move'; // Change cursor
+	};
+
+	handleDragEnter = (e) => {
+
+		const pos = e.target.getAttribute("position");
+		if (pos !== null) {
+
+			// Update classes
+			if (this.overElement) this.overElement.classList.remove("dragging");
+			this.overElement = e.target;
+			this.overElement.classList.add("dragging");
+
+			// Update toPos & fromPos + Reorder
+			this.toPos = pos;
+			this.props.reorderTasks(this.fromPos, this.toPos);
+			this.fromPos = pos;
+		}
+	};
+
+	handleDragEnd = (e) => {
+
+		// Update classes
+		if (this.overElement) this.overElement.classList.remove("dragging");
+	};
+
 
 	//////////////////////////////////////////////////////////////////////////////
 
@@ -80,7 +120,15 @@ class TaskList extends Component {
 			} else {
 
 				taskNotDoneDivs.push(
-					<div className="task" key={key}>
+					<div
+						className="task"
+						key={key}
+						position={key}
+						onDragStart={this.handleDragStart}
+						onDragEnter={this.handleDragEnter}
+						onDragOver={this.handleDragOver}
+						onDragEnd={this.handleDragEnd}
+						draggable="true">
 						<div className="icon not-done" onClick={() => this.props.toggleDone(key)}></div>
 						<p>{task.name}</p>
 						<div className="icon trash" onClick={() => this.props.deleteTask(key)}></div>

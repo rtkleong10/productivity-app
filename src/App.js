@@ -136,6 +136,13 @@ class App extends Component {
 		taskRef.remove();
 	};
 
+	// Dragging (swap values of fromPos & toPos)
+	reorderTasks = (fromPos, toPos) => {
+
+		this.state.tasksRef.child(toPos).set(this.state.tasks[fromPos]);
+		this.state.tasksRef.child(fromPos).set(this.state.tasks[toPos]);
+	};
+
 
 	//////////////////////////////////////////////////////////////////////////////
 	
@@ -155,7 +162,8 @@ class App extends Component {
 					<TaskList
 						tasks={this.state.tasks}
 						toggleDone={this.toggleDone}
-						deleteTask={this.deleteTask} />
+						deleteTask={this.deleteTask}
+						reorderTasks={this.reorderTasks} />
 				</div>
 			);
 
