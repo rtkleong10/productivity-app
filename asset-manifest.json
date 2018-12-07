@@ -1,13 +1,13 @@
 {
-  "main.css": "/productivity-app/static/css/main.77a7f951.chunk.css",
-  "main.js": "/productivity-app/static/js/main.5b39ef2b.chunk.js",
-  "main.js.map": "/productivity-app/static/js/main.5b39ef2b.chunk.js.map",
-  "static/js/1.cd822512.chunk.js": "/productivity-app/static/js/1.cd822512.chunk.js",
-  "static/js/1.cd822512.chunk.js.map": "/productivity-app/static/js/1.cd822512.chunk.js.map",
-  "runtime~main.js": "/productivity-app/static/js/runtime~main.e1d4de31.js",
-  "runtime~main.js.map": "/productivity-app/static/js/runtime~main.e1d4de31.js.map",
-  "static/css/main.77a7f951.chunk.css.map": "/productivity-app/static/css/main.77a7f951.chunk.css.map",
-  "index.html": "/productivity-app/index.html",
-  "precache-manifest.8ff836e2a33ac24732ab114ead3bfaf7.js": "/productivity-app/precache-manifest.8ff836e2a33ac24732ab114ead3bfaf7.js",
-  "service-worker.js": "/productivity-app/service-worker.js"
+  "main.css": "/static/css/main.77a7f951.chunk.css",
+  "main.js": "/static/js/main.99415c7f.chunk.js",
+  "main.js.map": "/static/js/main.99415c7f.chunk.js.map",
+  "static/js/1.03d956fd.chunk.js": "/static/js/1.03d956fd.chunk.js",
+  "static/js/1.03d956fd.chunk.js.map": "/static/js/1.03d956fd.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.77a7f951.chunk.css.map": "/static/css/main.77a7f951.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.2b47b87dbcd7449829b8ed9255f1a63e.js": "/precache-manifest.2b47b87dbcd7449829b8ed9255f1a63e.js",
+  "service-worker.js": "/service-worker.js"
 }
