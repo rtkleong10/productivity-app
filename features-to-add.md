@@ -6,6 +6,7 @@
 
 # Functionality
 - Filters
+- Sort
 - Due date
 - Editing
 - Prioritising
@@ -13,3 +14,4 @@
 - Tasks without having to login
 - Undo button
 - Task details window
+- Reverse the display order
