@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/productivity-app/static/css/main.5d11376a.chunk.css"
   },
   {
-    "revision": "b39e81960a07d729729d0b4afc158adb",
+    "revision": "5710c3841ace4a1152bcc57b3b9de5c7",
     "url": "/productivity-app/index.html"
   }
 ];
