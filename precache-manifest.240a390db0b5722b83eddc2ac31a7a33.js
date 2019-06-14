@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "b5ed933057eaf1919dd79d81248cdbce",
-    "url": "/static/media/AvenirNextLTPro-Regular.b5ed9330.otf"
-  },
-  {
     "revision": "91d8ff8ac25f51073a577408ae9cec86",
     "url": "/static/media/AvenirNextLTPro-Bold.91d8ff8a.otf"
+  },
+  {
+    "revision": "b5ed933057eaf1919dd79d81248cdbce",
+    "url": "/static/media/AvenirNextLTPro-Regular.b5ed9330.otf"
   },
   {
     "revision": "bf9a350d68a52a5374938daf143e5121",
