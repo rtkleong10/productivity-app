@@ -1,13 +1,14 @@
 {
-  "main.css": "/productivity-app/static/css/main.5d11376a.chunk.css",
-  "main.js": "/productivity-app/static/js/main.fd1ed10a.chunk.js",
-  "main.js.map": "/productivity-app/static/js/main.fd1ed10a.chunk.js.map",
-  "static/js/1.cd822512.chunk.js": "/productivity-app/static/js/1.cd822512.chunk.js",
-  "static/js/1.cd822512.chunk.js.map": "/productivity-app/static/js/1.cd822512.chunk.js.map",
+  "main.css": "/productivity-app/static/css/main.35114674.chunk.css",
+  "main.js": "/productivity-app/static/js/main.8b3c658a.chunk.js",
+  "main.js.map": "/productivity-app/static/js/main.8b3c658a.chunk.js.map",
+  "static/js/1.083b8def.chunk.js": "/productivity-app/static/js/1.083b8def.chunk.js",
+  "static/js/1.083b8def.chunk.js.map": "/productivity-app/static/js/1.083b8def.chunk.js.map",
   "runtime~main.js": "/productivity-app/static/js/runtime~main.e1d4de31.js",
   "runtime~main.js.map": "/productivity-app/static/js/runtime~main.e1d4de31.js.map",
-  "static/css/main.5d11376a.chunk.css.map": "/productivity-app/static/css/main.5d11376a.chunk.css.map",
+  "static/media/index.css": "/productivity-app/static/media/AvenirNextLTPro-Regular.b5ed9330.otf",
+  "static/css/main.35114674.chunk.css.map": "/productivity-app/static/css/main.35114674.chunk.css.map",
   "index.html": "/productivity-app/index.html",
-  "precache-manifest.afb29b3ed780d67f710c7e28b7efea44.js": "/productivity-app/precache-manifest.afb29b3ed780d67f710c7e28b7efea44.js",
+  "precache-manifest.0417449ce83f68f57d471e4b57c1a84d.js": "/productivity-app/precache-manifest.0417449ce83f68f57d471e4b57c1a84d.js",
   "service-worker.js": "/productivity-app/service-worker.js"
 }
