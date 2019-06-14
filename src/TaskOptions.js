@@ -46,13 +46,13 @@ class TaskOptions extends Component {
 							ref={this.inputElement} />
 						<button
 							type="submit"
-							className="btn-green"
+							className="btn-green round"
 							onClick={this.addTask}>
-							Add Task
+							+
 						</button>
 					</form>
 					<button
-						className="btn-red"
+						className="btn-pink"
 						onClick={this.props.clear}>
 						Clear
 					</button>

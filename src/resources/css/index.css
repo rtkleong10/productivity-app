@@ -1,12 +1,39 @@
 /* Core Styles*/
+:root {
+	--green: #2AB599;
+	--blue: #5C99D1;
+	--pink: #E1707C;
+	--light-grey: #DFDFDF;
+	--dark-grey: #444444;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: local('Avenir Next'), local('Avenir-Next'),
+		url("../font/avenir-next/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: local('Avenir Next Bold'), local('Avenir-Next-Bold'),
+		url("../font/avenir-next/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
+	color: var(--dark-grey);
 }
 
 * {
-	font-family: "Oxygen", sans-serif;
+	font-family: "Avenir Next", Arial, sans-serif;
 }
 
 .container {
@@ -34,41 +61,54 @@ input:focus {
 /* Buttons */
 button {
 	border-radius: 10px;
-	padding: 10px;
+	padding: 10px 20px;
 	font-size: 18px;
 	color: #FFFFFF;
 	font-weight: bold;
 	cursor: pointer;
-	border: none;
+	border: 2px solid;
+	width: fit-content;
+	width: -moz-fit-content;
+	transition: all 0.3s ease-out;
 }
 
-button:focus {
+button:hover, button:focus {
+	background-color: transparent;
 	outline: none;
 }
 
+button.round {
+	border-radius: 100%;
+	width: 46px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 .btn-green {
-	background-color: #2DC37F;
+	background-color: var(--green);
+	border-color: var(--green);
 }
 
 .btn-green:hover, .btn-green:focus {
-	background-color: #61C396;
+	color: var(--green);
 }
 
-.btn-red {
-	background-color: #D33333;
+.btn-pink {
+	background-color: var(--pink);
+	border-color: var(--pink);
 }
 
-.btn-red:hover, .btn-red:focus {
-	background-color: #F35555;
+.btn-pink:hover, .btn-pink:focus {
+	color: var(--pink);
 }
 
 .btn-blue {
-	background-color: #2D7FC3;
-	width: 100px;
+	background-color: var(--blue);
+	border-color: var(--blue);
 }
 
 .btn-blue:hover, .btn-blue:focus {
-	background-color: #6196C3;
+	color: var(--blue);
 }
 
 
@@ -76,8 +116,7 @@ button:focus {
 /* Sections */
 /* Header */
 .header {
-	background-color: #2DC37F;
-	color: #FFFFFF;
+	background-color: var(--light-grey);
 	font-size: 48;
 	padding: 20px 0;
 	margin-bottom: 20px;
@@ -89,14 +128,20 @@ button:focus {
 	padding: 20px 0;
 }
 
-.task-options > * {
-	display: grid;
-	grid-template-columns: 4fr 1fr;
+@media (min-width: 576px) {
+	.task-options div {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .task-options input {
-	width: 40%;
+	width: 40vw;
 	margin-right: 20px;
+}
+
+.task-options div > * {
+	margin-bottom: 10px;
 }
 
 
